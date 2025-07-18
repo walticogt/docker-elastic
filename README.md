@@ -14,10 +14,18 @@ En el navegador: http://localhost:5601/
 # En la configuración de metricbeat.yml, agregrar:
 # Cambiar la IP por la IP donde has montado el docker
 
+
 setup.kibana:
+
    setup.ilm.overwrite: true
+   
    host: "http://192.168.18.52:5601"
+
+   
 output.elasticsearch:
+
    hosts: ["192.168.18.52:9200"]
+   
    username: "elastic"
+   
    password: "Elastic123"
