@@ -29,5 +29,5 @@ En el navegador: http://localhost:5601/
 
       output.elasticsearch:
          hosts: ["192.168.18.x:9200"]
-         #username: "elastic"
-         #password: "Elastic123"
+         username: "elastic"
+         password: "Elastic123"
