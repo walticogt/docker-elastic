@@ -22,6 +22,8 @@ En el navegador: http://localhost:5601/
       cd metricbeat-8.10.1-darwin-x86_64/
 
 # En la configuración de metricbeat.yml, agregrar:
+# En Linux: /etc/metricbeat/metricbeat.yml
+# En Windows: 
 # Cambiar la IP por la IP donde has montado el docker
 
       setup.kibana:
