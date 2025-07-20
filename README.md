@@ -1,12 +1,9 @@
-# docker-elastic
-Ejecuta: docker-compose up -d
-
-Para detener: docker-compose down
-
-En el navegador: http://localhost:5601/
+# Referencias:
+      docker-compose up -d
+      http://localhost:5601/
 
 # El cluster Elasticsearch o localhost:9200 demora 50s en levantar.
-# Al iniciar http://192.168.18.52:5601/ -> Integrations>System Metrics
+      Integrations>System Metrics
 
 # Para cliente Windows ejecutar: 
       .\install-service-metricbeat.ps1
@@ -22,10 +19,10 @@ En el navegador: http://localhost:5601/
       cd metricbeat-8.10.1-darwin-x86_64/
 
 # En la configuración de metricbeat.yml, agregrar:
-# En Linux: /etc/metricbeat/metricbeat.yml
-# En Windows: 
-# Cambiar la IP por la IP donde has montado el docker
+# En Linux: 
+      vi /etc/metricbeat/metricbeat.yml
 
+# Cambiar la IP por la IP donde has montado el docker
       setup.kibana:
          setup.ilm.overwrite: true
          host: "http://192.168.18.x:5601"
