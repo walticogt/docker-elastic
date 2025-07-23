@@ -1,4 +1,4 @@
-# Referencias:
+# Elastic sin SSL (sin autenticación):
       docker-compose up -d
       http://localhost:5601/
 
